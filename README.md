@@ -23,9 +23,15 @@ npm start
 ```
 ## Configuration
 Set environment variables in .env file
+```bash
+NODE_ENV=development
+PORT=3001
+BACKEND_URL=https://randomuser.me/api/
+```
+
+
 
 Run the app in development mode.\
 Open [http://localhost:3001](http://localhost:3001) to view in the browser.
 
-The page will reload if you edit.\
-You will also see any lint errors in the console.
+You can experience the application at https://call-api-user-wqf9.vercel.app/user
