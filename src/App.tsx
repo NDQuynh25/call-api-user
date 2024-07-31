@@ -1,25 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import UserManagement from './pages/user/UserManagement';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router> {/* Bao bọc các route trong Router */}
+      <div className="App">
+        <Routes>
+          <Route path="/" element={
+            <div>
+              <a href="/user">click me</a>
+            </div>
+          } />
+          <Route path="/user" element={<UserManagement />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

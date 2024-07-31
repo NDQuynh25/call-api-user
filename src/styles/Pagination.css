@@ -1,0 +1,31 @@
+/* src/components/Pagination.css */
+.pagination {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .pagination button, .pagination span {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    color: black;
+  }
+  
+  .pagination button.active {
+    background-color: red;
+    color: black;
+  }
+  
+  .pagination button[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  
+  .pagination button:focus {
+    outline: none;
+  }
+  

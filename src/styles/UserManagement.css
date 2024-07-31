@@ -1,0 +1,198 @@
+/* Layout and Sidebar */
+.layout {
+    display: flex;
+    height: 98vh;
+    transition: margin-left 0.3s;
+    background-color: #fff;
+  }
+  
+  .sidebar {
+    border: 1.5px solid #ccc;
+    background: white;
+    color: black!important;
+    width: 250px;
+    transition: width 0.3s;
+    position: relative;
+    border-radius: 50px 0 0 50px;
+  }
+  
+  .sidebar.closed {
+    width: 100px;
+    color: #000;
+  }
+  
+  .sidebar h3 {
+    text-align: center;
+    color: #000;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px 0;
+  }
+  
+  .sidebar ul {
+    width: 95%;
+    list-style: none;
+    padding: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+  
+  .sidebar li, .sidebar.closed li {
+    
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  .sidebar li.active {
+
+    border-radius: 10px 10px 10px 10px;
+    background: #ccc;
+  }
+  .sidebar li:hover {
+    border-radius: 10px 10px 10px 10px;
+    background: #007bff;
+  }
+  
+  .icon {
+    margin-right: 10px;
+  }
+  
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+  }
+  
+  .header {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #ecf0f1;
+  }
+  
+  .toggle-button {
+    background: #3498db;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .welcome {
+    font-size: 1.2em;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    background: #ecf0f1;
+  }
+  
+  .search-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-bar button {
+    padding: 10px 20px;
+    border: none;
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+  }
+  
+  .user-table th, .user-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .user-table th {
+    background: #3498db;
+    color: white;
+  }
+  
+  .empty-state {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .empty-container img {
+    width: 50px;
+  }
+  
+  .footer {
+    background: #ecf0f1;
+    padding: 10px;
+    text-align: center;
+  }
+  .hidden {
+    display: none;
+  }
+  .display-mini {
+    
+    display: flex;
+    justify-content: center;
+    background: white;
+    color: black!important;
+  }
+  .display-mini:active {
+    background: #3498db;
+    color: white;
+  }
+  /* UserManagement.css */
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pagination button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.pagination button:not(:disabled):hover {
+  background-color: #0056b3;
+}
+
+.pagination span {
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+  
+ 

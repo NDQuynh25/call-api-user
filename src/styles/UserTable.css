@@ -1,0 +1,84 @@
+
+table {
+    width: 100% !important;
+    border-collapse: collapse;
+}
+
+th {
+    cursor: pointer;
+    color: #000 !important;
+    font-size: 1.4rem;
+    
+    padding: 10px;
+}
+
+th:hover {
+    background-color: #eaeaea;
+}
+
+th.sorted-asc::after {
+  content: " ▲" !important;
+    background-color: black;
+  
+}
+
+th.sorted-desc::after {
+    content: " ▼";
+}
+
+td {
+    font-size: 1.3rem;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.user-info {
+    display: flex;
+   
+}
+.user-avatar {
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+.user-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.user-name { 
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sort-icon {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+    gap: 0px;
+    
+
+}
+.icon {
+  font-size: 1rem;
+  color: #333;
+  transition: color 0.3s ease; 
+}
+
+.sort-icon.active .icon {
+  color: #007bff; 
+}
+.sort-icon:hover .icon {
+  color: #0056b3; 
+}
+#username {
+   display: flex;
+   justify-content: "space-between";
+}
