@@ -82,7 +82,7 @@ export interface Picture {
     thumbnail: string;
 }
 
-// Ví dụ sử dụng với dữ liệu đã cung cấp
+
 // const exampleData: BackendRes<Results> = {
 //     info: {
 //         seed: "51ba8e01f4a7434c",

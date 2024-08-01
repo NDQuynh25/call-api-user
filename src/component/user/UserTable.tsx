@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { User } from '../../types/backend.d';
 import '../../styles/UserTable.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 interface UserTableProps {
     users: User[];

@@ -13,7 +13,7 @@ const Loading = () => {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    zIndex: 0, 
+    zIndex: 9999, 
   };
 
   const loaderStyle: React.CSSProperties = {

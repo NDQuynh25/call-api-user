@@ -7,6 +7,7 @@ import { fetchUsers } from "../../redux/slice/userSlice";
 import { User } from "../../types/backend";
 import Loading from "../../component/Loading";
 import Pagination from "../../component/Pagination";
+import Footer from "../../component/Footer";
 
 function UserManagement() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -158,10 +159,8 @@ function UserManagement() {
                     </div>
                 
                 </main>
-
-                <footer className="footer">
-                <p>© 2024 Nguyen Duc Quynh. All Rights Reserved.</p>
-                </footer>
+                <Footer />
+                
             </div>
         }
         </div>
